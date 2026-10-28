@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+    background-color: #dcd5cd;
+    color: #089382;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.card {
+    background-color: #dcd5cd;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    gap: 40px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.profile {
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: #8abeb9;
+    border-right: 2px solid #d30900;
+    padding-right: 30px;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.profile h1 {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: medium;
+    margin-bottom: 6px;
+}
+
+.link {
+    color: #089382;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.todo {
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo h2 {
+    margin-bottom: 15px;
+    font-size: medium;
+    margin-bottom: 15px;
+}
+
+.input {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.input input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #8abeb9;
+    background-color: #8abeb9;
+    outline: none
+}
+
+.input input::placeholder {
+    color: #d30900;
+    opacity: 0.8;
+}
+
+#adding { 
+    padding: 10px 18px;
+    background-color: #8abeb9;
+    color: #d30900;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#to-do_list {
+    list-style: none;
+}
+
+#to-do_list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: medium;
+    margin-bottom: 10px;
+    background-color: #8abeb9;
+}
+
+.delete_btn {
+    background-color: transparent;
+    color: #dcd5cd;
+    border: 1px solid #dcd5cd;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: small;
+    cursor: pointer;
+}
